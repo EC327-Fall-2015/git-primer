@@ -3,11 +3,11 @@ A Gentle Git Primer
 
 When setting up a git repository, you have a few options. Either you can
 
-   git clone some/existing/repository
+    git clone some/existing/repository
 
 or you can
 
-   git init
+    git init
 
 in an existing directory, which will allow you to do more things with
 git. For instance, to clone this repository, you would `git clone
@@ -48,3 +48,14 @@ Thus far, I've done the following:
     cd git-primer
     git add README
     git commit
+
+Next on the roster are push and pull. For now, we'll just consider that
+`git push <remote> <branch>` pushes your local commits to a remote
+repository, and `git pull <remote> <branch>` pulls new commits from a
+remote repository. If you cloned this repository, the nickname for the
+default remote is `origin`, and the name for the default branch is
+`master`. Therefore to push this commit to github, we just need to specify
+
+    git push origin master
+
+More on branches later.
